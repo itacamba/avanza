@@ -166,10 +166,12 @@ header{
 #services-container{
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 .service{
-    width: 22%;
+    width: 23%;
     background:#ffffff;
     border-radius: 25px;
     -webkit-box-shadow: -8px 5px 32px -1px rgba(0,0,0,0.46); 
@@ -178,6 +180,9 @@ header{
     flex-direction: column;
     align-items: center;
     padding: 40px;
+}
+.service:last-child{
+    margin-right: 0;
 }
 .service-img{
     width: 100%;
@@ -363,6 +368,12 @@ width: 100%;
  
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1133px){
+    .service{
+        width: 30%;
+        margin-bottom: 30px;
+    }
+}
 @media screen and (max-width: 840px){
     #menu-icon{
         display: flex;
@@ -401,8 +412,41 @@ width: 100%;
         color: #f2f2f2;
     }
     /* main banner content */
-    #banner-content h1{
-        font-size: 10vw;
+    #banner-content{
+        padding-top: 50px;
     }
+    #banner-content h1{
+        width: 90%;
+        font-size: 8vw;
+        margin-bottom: 20px;
+    }
+    #banner-content p{
+        width: 80%;
+        margin-top: 0;
+        line-height: 30px;
+    }
+    #big-a {
+        width: 300px;
+    }
+    .green-btn{
+        padding: 15px 30px;
+    }
+    /* SERVICES */  
+    #services > h1{
+        font-size: 25px;
+    }
+    #services-container{
+        flex-wrap: wrap;
+    }
+    .service{
+        width: 40%;
+    }
+   
+}
+@media screen and (max-width: 500px){
+    .service{
+        width: 70%;
+    }
+
 }
 /* END MEDIA QUERIES */
