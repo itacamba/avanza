@@ -4,7 +4,11 @@
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: .4px;
+    font-weight: 600;
     text-decoration: none;
+}
+p{
+    font-weight: 300;
 }
 .container-90{
     width: 90%;
@@ -22,6 +26,7 @@
     color: #f2f2f2;
     font-weight: 600;
     cursor: pointer;
+    outline: none;
 }
 
 #offer-banner{
@@ -98,7 +103,7 @@ header{
 #nav > a:last-child{
     border: none;
     border-radius: 25px;
-    background: hsla(195, 59%, 39%, 0.286);
+    background: rgba(0, 0, 0, 0.05);
     padding: 15px 25px;
 }
 #banner-content{
@@ -122,6 +127,7 @@ header{
     width: 80%;
     color: #f2f2f2;
     font-size: 70px;
+    font-weight: 700;
     z-index: 1000;
     position: relative;
 }
@@ -238,6 +244,200 @@ header{
     font-size: 20px;
 }
 /* END ACTIVATE YOUR BRAND */
+/* CONTACT SECTION */
+#contact-section{
+    width: 100%;
+    position: relative;
+    height: 800px;
+    margin-top: 150px;
+}
+.custom-shape-divider-bottom-1602159274 {
+    position: absolute;
+    bottom: -63px; /* added cause shape has extra padding at the bottom*/
+    right: 0;
+    width: 90%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 0; /* was added cause this block is interfeering with other components*/
+}
+
+.custom-shape-divider-bottom-1602159274 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 438px;
+    transform: rotateY(180deg);
+    z-index: -1; /* was added so the form sits on top of this graphic*/
+}
+
+.custom-shape-divider-bottom-1602159274 .shape-fill {
+    fill: #FFFFFF;
+}
+#contact-section-content{
+    position: relative; /* was added so z-index could work.*/
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+#contact-lets-work{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#contact-text{
+    width: 90%;
+    color: #f2f2f2;
+}
+#contact-text p{
+    margin-top: 30px;
+    line-height: 30px;
+}
+#contact-social{
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+}
+#contact-social i{
+    color: rgba(255, 255, 255, .4);
+    font-size: 25px;
+}
+#contact-form{
+    width: 45%;
+    background-color: white;
+    /* height: 70%; */
+    border-radius: 25px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 30px 0; */
+}
+#contact-form > form{
+    padding: 50px 0;
+    width: 80%;
+    /* height: 100%; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#name-email{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#name-email input:first-child{
+    margin-right: 20px;
+}
+
+#contact-form input[type="text"], input[type="email"]{
+    border:none;
+    border-bottom: 1px solid rgba(0,0,0,0.26);
+    margin-bottom: 30px;
+    outline: none;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+#contact-form textarea{
+    margin-bottom: 30px;
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.26);
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+}
+::placeholder {
+    color: rgba(0,0,0,.3);
+    opacity: 1; /* Firefox */
+  }
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgba(0,0,0,.3);
+  }
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: rgba(0,0,0,.3);
+}
+#contact-form h4{
+    margin-top: 15px;
+    color: rgba(0,0,0,0.66)
+}
+#contact-checkboxes{
+    /* border: 1px solid blue; */
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+} */
+.service-checkbox{
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.service-checkbox input{
+    color: red;
+    height: 13px;
+	width: 13px
+}
+.service-checkbox label{
+    margin-left: 5px;
+    font-weight: 300;
+}
+#contact-form input[type="submit"]{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 20px 0;
+    background: #33CF97;
+    color: #f2f2f2;
+}
+.light-shadow{
+    position: relative;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(13,13,13,0.56);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(13,13,13,0.56);
+    box-shadow: 0px 0px 25px 0px rgba(13,13,13,0.56);
+}
+/* END CONTACT SECTION */
 /* GRADIENT */
 .gradient-300{
     margin-top: 150px;
@@ -250,6 +450,10 @@ header{
     background: linear-gradient(to right,  #21437c 0%,#26658d 33%,#29809d 53%,#2ca1ad 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21437c', endColorstr='#2ca1ad',GradientType=1 ); /* IE6-9 */
     position: relative;
+}
+.vertical-gradient{
+    background: rgb(36,84,133);
+    background: linear-gradient(180deg, rgba(36,84,133,1) 0%, rgba(38,101,141,1) 9%, rgba(41,128,157,1) 32%, rgba(44,161,173,1) 67%, rgba(12,176,193,1) 97%);
 }
 #shapes{
     position: absolute;
@@ -354,7 +558,7 @@ footer{
 }
 form{
     width: 350px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 form > label{
     width: 100%;
