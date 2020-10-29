@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,7 @@
     <script src="https://kit.fontawesome.com/5eb26f0a00.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles.css">
+    <script src="index.js"></script>
     <title>Avanza | Digital Services</title>
 </head>
 <body>
@@ -138,15 +140,16 @@
             </div>
 
             <div id="contact-form" class="light-shadow">
-                <form action="">
+                <form action="webform.php" method="POST" id="form-node">
                     <h3>We'd love to know more about you!</h3>
+                    <p class="form-error"></p>
                     <div id="name-email">
-                        <input id="name" type="text" placeholder="Your Name" name="name">
-                        <input type="email" placeholder="Email" name="email">
+                        <input id="name" type="text" placeholder="*Your Name" name="name" require>
+                        <input type="email" placeholder="*Email" name="email" require>
                     </div>
-                    <input type="text" placeholder="Company Name" name="company">
-                    <input type="text" placeholder="Your Website URL *optional" name="website-url">
-                    <textarea name="message" rows="1" placeholder="Your Message"></textarea>
+                    <input type="text" placeholder="*Company Name" name="company">
+                    <input type="text" placeholder="Your Website URL (optional)" name="website-url">
+                    <textarea name="message" rows="1" placeholder="*Your Message" require></textarea>
                     <h4>What services can we provide for you?</h4>
                     <div id="contact-checkboxes">
                         <div class="service-checkboxes">
@@ -171,18 +174,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="service-checkbox">
-                            <input id="web-design" name="web-design" type="checkbox">
-                            <label for="web-design">Web Design </label>
-                        </div>
-                        <div class="service-checkbox">
-                            <input id="advertising" name="advertising" type="checkbox">
-                            <label for="advertising">Advertising </label>
-                        </div>
-                        <div class="service-checkbox">
-                            <input id="social-media" name="social-media" type="checkbox">
-                            <label for="social-media">Social Media </label>                          
-                        </div> -->
                     </div>
                     <input type="submit" value="Submit">
                 </form>
@@ -278,6 +269,6 @@
             Copyright © 2020 Avanza. Herndon, VA
         </div>
     </footer>
-    <script src="index.js"></script>
+
 </body>
 </html>
