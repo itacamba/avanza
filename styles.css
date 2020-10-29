@@ -101,9 +101,8 @@ header{
     padding: 7px 0;
 }
 #nav > a:last-child{
-    border: none;
-    border-radius: 25px;
-    background: rgba(0, 0, 0, 0.05);
+    border: 2px solid #33CF97;
+    border-radius: 50px;
     padding: 15px 25px;
 }
 #banner-content{
@@ -179,7 +178,7 @@ header{
 .service{
     width: 23%;
     background:#ffffff;
-    border-radius: 25px;
+    border-radius: 15px;
     -webkit-box-shadow: -8px 5px 32px -1px rgba(0,0,0,0.46); 
     box-shadow: -8px 5px 32px -1px rgba(0,0,0,0.46);
     display: flex;
@@ -277,6 +276,8 @@ header{
 #contact-section-content{
     position: relative; /* was added so z-index could work.*/
     height: 100%;
+    width: 70%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -311,7 +312,7 @@ header{
     width: 45%;
     background-color: white;
     /* height: 70%; */
-    border-radius: 25px;
+    border-radius: 15px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -379,45 +380,25 @@ header{
     display: flex;
     flex-wrap: wrap;
 }
-/* input[type='radio']:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #d1d3d1;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-}
-
-input[type='radio']:checked:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #ffa500;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-} */
-.service-checkbox{
+.service-checkboxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
     margin-right: 25px;
     margin-bottom: 20px;
 }
-.service-checkbox input{
+
+.service-checkboxes input{
     color: red;
     height: 13px;
-	width: 13px
+    width: 13px;
+    cursor: pointer;
 }
-.service-checkbox label{
+.service-checkboxes label{
     margin-left: 5px;
     font-weight: 300;
+    cursor: pointer;
 }
 #contact-form input[type="submit"]{
     width: 80%;
@@ -455,6 +436,14 @@ input[type='radio']:checked:after {
     background: rgb(36,84,133);
     background: linear-gradient(180deg, rgba(36,84,133,1) 0%, rgba(38,101,141,1) 9%, rgba(41,128,157,1) 32%, rgba(44,161,173,1) 67%, rgba(12,176,193,1) 97%);
 }
+.horizontal-gradient{
+    background: #21437c; /* Old browsers */
+    background: -moz-linear-gradient(left, #2ca1ad 0%, #29809d 33%, #26658d 53%, #21437c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #2ca1ad 0%, #29809d 33%, #26658d 53%, #21437c 100%);; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #2ca1ad 0%, #29809d 33%, #26658d 53%, #21437c 100%);; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ca1ad', endColorstr='#214437c',GradientType=1 ); /* IE6-9 */
+
+}
 #shapes{
     position: absolute;
     bottom: 0;
@@ -467,15 +456,13 @@ input[type='radio']:checked:after {
 /* END GRADIENT */
 /* TESTIMONIALS */
 #testimonials{
-    position: absolute;
-    z-index: 1000;
-    top: 140px;
-    /* margin-top: -230px; */
+    width: 100%;
+    margin-top: 100px;
 }
 #testimonials > h1{
-    width: 70%;
+    text-align: center;
     margin: 0 auto;
-    color: #f2f2f2;
+    color: #777777;
 }
 #testimonials > p{
     width: 70%;
@@ -486,7 +473,7 @@ input[type='radio']:checked:after {
 .testimonial{
     width: 30%;
     background:#ffffff;
-    border-radius: 25px;
+    border-radius: 15px;
     -webkit-box-shadow: -8px 5px 32px -1px rgba(0,0,0,0.46); 
     box-shadow: -8px 5px 32px -1px rgba(0,0,0,0.46);
     display: flex;
@@ -513,34 +500,98 @@ input[type='radio']:checked:after {
 }
 .info-content{
     width: 180px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center
 }
 .info-content > h2{
     font-size: 16px;
-    color: #000000;
+    color: #2ca1ad;
 }
 .info-content > p{
     margin-top: 10px;
+    font-size: 14px;
     width: 100%;
     color: #000000;
 }
 .testimonial-content{
     margin-top: 25px;
     line-height: 30px;
+    font-weight: 200;
+    color: #777777;
 }
 /* END TESTIMONIALS */
 /* FOOTER */
-footer{
-    margin-top: 100px;
+.custom-shape-divider-top-1603992979 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background: #000000;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1603992979 svg {
+    position: relative;
+    display: block;
+    width: calc(153% + 1.3px);
+    height: 191px;
+}
+
+.custom-shape-divider-top-1603992979 .shape-fill {
+    fill: #FFFFFF;
+}
+footer{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 40px 0;
+    background: #26658d;
     color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+#footer-header{
+    margin-top: 200px;
+}
+#footer-header p{
+    margin-top: 20px;
+}
+#footer-header button{
+    margin-top: 40px;
+}
+#footer-social{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.thin-white-line{
+    width: 35%;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: .5;
+}
+#social-links i{
+    font-size: 20px;
+    cursor: pointer;
+}
+#social-links{
+    width: 120px;
     display: flex;
     justify-content: space-between;
 }
-#f-boxes{
+#copy-right{
+    margin-top: 30px;
+    font-size: 10px;
+    font-weight: 200;
+
+}
+/* #f-boxes{
     padding: 80px 0;
     display: flex;
     justify-content: space-between;
@@ -555,17 +606,8 @@ footer{
     font-size: 14px;
     font-weight: 600;
     color: #f2f2f2b7;
-}
-form{
-    width: 350px;
-    /* border: 1px solid red; */
-}
-form > label{
-    width: 100%;
-}
-input{
-width: 100%;
-}
+} */
+
 /* END FOOTER */
 
 
@@ -575,6 +617,37 @@ width: 100%;
 @media screen and (max-width: 1133px){
     .service{
         width: 30%;
+        margin-bottom: 30px;
+    }
+    #contact-section{
+        height: auto;
+    }
+    #contact-section-content{
+        flex-direction: column;
+    }
+    #contact-lets-work{
+        width: 380px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    #contact-text h1{
+        width: 100%;
+    }
+    #contact-social{
+        margin-top: 20px;
+    }
+    #contact-form{
+        margin-top: 40px;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1025px){
+    #testimonial-boxes{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .testimonial{
+        width: 45%;
         margin-bottom: 30px;
     }
 }
@@ -647,9 +720,48 @@ width: 100%;
     }
    
 }
+@media screen and (max-width: 670px){
+    #activate-brand{
+        flex-direction: column;
+    }
+    #blue-line{
+       float: left;
+    }
+    #activate-left h1{
+        text-align: left;
+    }
+    #activate-right{
+        width: 100%;
+    }
+    #testimonial-boxes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial{
+        width: 400px;
+    }
+}
 @media screen and (max-width: 500px){
     .service{
-        width: 70%;
+        width: 100%;
+    }
+    .testimonial{
+        width: 95%;
+    }
+    #contact-section-content{
+        width: 85%;
+    }
+    #contact-form{
+        width: 100%;
+    }
+    #name-email{
+        flex-direction: column;
+    }
+    #name-email input:first-child{
+        margin-right: 0;
+    }
+    .thin-white-line{
+        width: 25%;
     }
 
 }
