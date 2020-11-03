@@ -70,6 +70,12 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+#call-to-action{
+    display: none;
+}
+.logo-mobile{
+    display: none;
+}
 .logo{
     width: 160px;
 }
@@ -81,9 +87,8 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
     width: 30px;
-    height: 16px;
+    height: 20px;
     cursor: pointer;
     display: none;
 }
@@ -770,6 +775,33 @@ footer{
     }
 }
 @media screen and (max-width: 840px){
+    header{
+        flex-direction: row-reverse;
+    }
+    #call-to-action{
+        display: block;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #33CF97;
+    }
+    #call-to-action i{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-mobile{
+        display: block;
+        width: 139px;
+    }
+    .logo-mobile img{
+        width: 100%;
+    }
     #menu-icon{
         display: flex;
     }
@@ -785,7 +817,7 @@ footer{
         align-items: flex-end;
         justify-content: flex-start;
         top: 0;
-        right: 0;
+        left: 0;
         background: rgba(242, 242, 242, .8);
         z-index: 10000;
         padding-bottom: 20px;

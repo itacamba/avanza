@@ -27,6 +27,12 @@
     </div>
     <div id="main-banner">
         <header>
+            <div id="call-to-action">
+                <a href="tel:5719829406"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="logo-mobile">
+                <img src="./images/avanza.png" alt="">
+            </div>
             <div class="logo">
               <img src="./images/logo.png" alt="">
             </div>
@@ -128,12 +134,6 @@
             </p>
             <a class="learn-more" href="">Learn More >></a>
         </div>
-
-
-
-
-
-
 
     </div>
 
