@@ -821,7 +821,17 @@ footer{
         background: rgba(242, 242, 242, .8);
         z-index: 10000;
         padding-bottom: 20px;
-        display: none;
+        transition:1s;
+        -webkit-transition:1s;
+        -moz-transition:1s;
+        transform: translateX(-120%);
+
+    }
+    #mobile-nav.slide-right{
+        transition:1s;
+        -webkit-transition:1s;
+        -moz-transition:1s;
+        transform: translate(0%)
     }
     #mobile-nav > a:first-child{
         display: block;
@@ -918,3 +928,5 @@ footer{
 
 }
 /* END MEDIA QUERIES */
+
+

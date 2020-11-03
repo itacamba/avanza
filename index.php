@@ -7,7 +7,6 @@
     <script src="https://kit.fontawesome.com/5eb26f0a00.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles.css">
-    <script src="index.js"></script>
     <title>Avanza | Digital Services</title>
 </head>
 <body>
@@ -311,6 +310,10 @@
         Problem Sending Form
     </div>
 
+
+
+
+    <script src="index.js"></script>
     <!-- added smooth scrolling from library  https://github.com/cferdinandi/smooth-scroll -->
     <script src="cferdi_smoothscroll.js"></script>
     <script>
