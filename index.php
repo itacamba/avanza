@@ -41,11 +41,19 @@
                 <div class="menu-line"></div>
             </div>
             <div id="mobile-nav">
-                <a href="" class="" id="x">x</a>
-                <a href="" class="" >WORK</a>
-                <a href="" class="" >APPROACH</a>
-                <a data-scroll href="#services" >SERVICES</a>
-                <a data-scroll href="#contact-section">LET'S TALK</a>
+                <div id="mobile-nav-links">
+                    <div id="mobile-nav-header">
+                        <div id="x">x</div>
+                        <div id="mobile-nav-call">
+                            <a href="tel:5719829406"><i class="fas fa-phone-alt"></i>Call</a>
+                        </div>
+                    </div>
+                    <a href="" class="" >WORK</a>
+                    <a href="" class="" >APPROACH</a>
+                    <a data-scroll href="#services" >SERVICES</a>
+                    <a data-scroll href="#contact-section">LET'S TALK</a>
+                </div>
+
             </div>
             <nav id="nav">
                 <a href="" class="">WORK</a>
