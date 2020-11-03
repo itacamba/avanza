@@ -1,4 +1,4 @@
-
+<?php include('form_process.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,13 +11,23 @@
     <title>Avanza | Digital Services</title>
 </head>
 <body>
+    <?php
+    if($form_message == 'success'){
+    ?>
+    <h1 id="green-message">Success!</h1>
+    <?php
+    } else if($form_message == 'failed'){
+    ?>
+    <h1 id="red-message">Make sure Form is filled correctly</h1>
+    <?php
+    }
+    ?>
     <div id="offer-banner">
-        <p>Now offering free services to our first 5 local clients</p>
+        <p>Now offering free services to our first 5 local clients </p>
     </div>
-    
     <div id="main-banner">
         <header>
-            <div id="logo">
+            <div class="logo">
               <img src="./images/logo.png" alt="">
             </div>
             <div id="menu-icon">
@@ -118,6 +128,13 @@
             </p>
             <a class="learn-more" href="">Learn More >></a>
         </div>
+
+
+
+
+
+
+
     </div>
 
     <div id="contact-section" class="vertical-gradient">
@@ -140,42 +157,51 @@
             </div>
 
             <div id="contact-form" class="light-shadow">
-                <form action="webform.php" method="POST" id="form-node">
-                    <h3>We'd love to know more about you!</h3>
-                    <p class="form-error"></p>
+                <form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" id="form-node" >
+                    <h3>We'd love to know more about you!</h3>   
+                    <p><?= $error ?></p> 
+                    <p class="error"></p>
                     <div id="name-email">
-                        <input id="name" type="text" placeholder="*Your Name" name="name" require>
-                        <input type="email" placeholder="*Email" name="email" require>
+                        <input type="text" value="<?= $name ?>" placeholder="*Your Name" name="name" id="name" require />
+
+                        <input type="email" value="<?= $email ?>" placeholder="*Email" name="email"id="email" require/>
+
+
                     </div>
-                    <input type="text" placeholder="*Company Name" name="company">
-                    <input type="text" placeholder="Your Website URL (optional)" name="website-url">
-                    <textarea name="message" rows="1" placeholder="*Your Message" require></textarea>
+                    <input type="tel" value="<?= $phone ?>" placeholder="*Phone Number (000-000-0000)"  name="phone" id="phone" require/>
+                    
+                    <input type="text" value="<?= $company ?>" placeholder="*Company Name" name="company" id="company"/>
+                    
+                    <input type="text" placeholder="Your Website URL (optional)" name="website_url" id="website_url"/>
+                    <textarea type="text" value="<?= $message ?>" name="message" id="message" rows="1" placeholder="*Your Message" require></textarea>
+                    
+
                     <h4>What services can we provide for you?</h4>
                     <div id="contact-checkboxes">
                         <div class="service-checkboxes">
                             <div id="checkboxes-left">
                                 <div>
-                                    <input id="seo" name="seo" type="checkbox">
+                                    <input name="seo" type="checkbox" id="seo">
                                     <label for="seo">SEO </label>
                                 </div>
                                 <div>
-                                    <input id="web-design" name="web-design" type="checkbox">
-                                    <label for="web-design">Web Design </label>
+                                    <input name="web_design" id="web_design" type="checkbox">
+                                    <label for="web_design" >Web Design </label>
                                 </div>
                             </div>
                             <div id="checkboxes-right">
                                 <div>
-                                    <input id="advertising" name="advertising" type="checkbox">
+                                    <input name="advertising" id="advertising" type="checkbox">
                                     <label for="advertising">Advertising </label>
                                 </div>
                                 <div>
-                                    <input id="social-media" name="social-media" type="checkbox">
-                                    <label for="social-media">Social Media </label>
+                                    <input  name="social_media" id="social_media" type="checkbox">
+                                    <label for="social_media">Social Media </label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" name="submit">
                 </form>
             </div>
 
@@ -214,8 +240,8 @@
                         <img src="./images/carla-round-portrait.png" alt="">
                     </div>
                     <div class="info-content">
-                            <h2>Carla Sahagun</h2>
-                            <p>Software Engineer</p>
+                            <h2>Gigi Mercer</h2>
+                            <p>Silver Hour</p>
                         </div>
                     </div>
                     <div class="testimonial-content">
@@ -245,9 +271,9 @@
     </div>
   
     <footer class="horizontal-gradient">
-        <div class="custom-shape-divider-top-1603992979">
+        <div class="custom-shape-divider-top-1604353830">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+                <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
             </svg>
         </div>
         <div id="footer-header">
@@ -258,10 +284,10 @@
         <div id="footer-social">
             <div class="thin-white-line"></div>
             <div id="social-links">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
+                <a href="https://m.facebook.com/AvanzaDigitalUSA"><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <!-- <a href=""><i class="fab fa-instagram"></i></a> -->
             </div>
             <div class="thin-white-line"></div>
         </div>
@@ -270,5 +296,25 @@
         </div>
     </footer>
 
+    <div id="form-success">
+        <div class="logo center top-25" id="success-logo">
+            <img src="./images/a-logo.png" alt="">
+        </div>
+        <div id="success-text">
+            <h1 class="center top-25">Thank you for contacting us!</h1>
+            <p class="center top-25">You will receive an answer straight to your inbox in less than 24 hours.</p>
+        </div>
+    </div>
+    <div id="form-failed">
+        Problem Sending Form
+    </div>
+
+    <!-- added JQuery Ajax to prevent refreshing page when submitting the form -->
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
+    <script src="form_submit_jquery.js"></script>
 </body>
 </html>
