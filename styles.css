@@ -309,7 +309,6 @@ header{
 
 }
 #contact-text{
-    width: 90%;
     color: #f2f2f2;
 }
 #contact-text > p{
@@ -754,9 +753,6 @@ footer{
         margin: 0 auto;
         margin-top: 80px;
     }
-    #contact-text h1{
-        width: 100%;
-    }
     .contact-social{
         margin-top: 20px;
     }
@@ -937,14 +933,36 @@ footer{
     }
 }
 @media screen and (max-width: 500px){
+    #mobile-nav{
+        width: 70%;
+    }
     .service{
         width: 100%;
+    }
+    #activate-left h1{
+        font-size: 25px;
+    }
+    #activate-right p{
+        font-size: 16px;
+        line-height: 25px;
     }
     .testimonial{
         width: 95%;
     }
+    #testimonials{
+        margin-top: 100px;
+    }
+    #testimonials h1{
+        font-size: 25px;
+    }
+    #contact-lets-work{
+        width: 100%;
+    }
     #contact-section-content{
         width: 85%;
+    }
+    #contact-text h1{
+        font-size: 25px;
     }
     #contact-form{
         width: 100%;
@@ -958,7 +976,9 @@ footer{
     .thin-white-line{
         width: 25%;
     }
-
+    #footer-header h1{
+        font-size: 25px;
+    }
 }
 /* END MEDIA QUERIES */
 
