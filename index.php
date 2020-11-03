@@ -36,17 +36,17 @@
                 <div class="menu-line"></div>
             </div>
             <div id="mobile-nav">
-                <a href="" id="x">x</a>
-                <a href="">WORK</a>
-                <a href="">APPROACH</a>
-                <a href="">SERVICES</a>
-                <a href="">LET'S TALK</a>
+                <a href="" class="" id="x">x</a>
+                <a href="" class="" >WORK</a>
+                <a href="" class="" >APPROACH</a>
+                <a data-scroll href="#services" >SERVICES</a>
+                <a data-scroll href="#contact-section">LET'S TALK</a>
             </div>
             <nav id="nav">
-                <a href="">WORK</a>
-                <a href="">APPROACH</a>
-                <a href="">SERVICES</a>
-                <a href="">GET A QUOTE</a>
+                <a href="" class="">WORK</a>
+                <a href="" class="" >APPROACH</a>
+                <a data-scroll href="#services" >SERVICES</a>
+                <a data-scroll href="#contact-section">GET A QUOTE</a>
             </nav>
         </header>
 
@@ -279,7 +279,9 @@
         <div id="footer-header">
             <h1>Ready to grow your business?</h1>
             <p>Click the button below for a free proposal</p>
-            <button class="green-btn">Get Quote</button>
+            <div class="footer-contact-btn">
+                <a href="#contact-section" class="green-btn">Get Quote</a>
+            </div>
         </div>
         <div id="footer-social">
             <div class="thin-white-line"></div>
@@ -309,6 +311,13 @@
         Problem Sending Form
     </div>
 
+    <!-- added smooth scrolling from library  https://github.com/cferdinandi/smooth-scroll -->
+    <script src="cferdi_smoothscroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 100
+        });
+    </script>
     <!-- added JQuery Ajax to prevent refreshing page when submitting the form -->
     <script
         src="https://code.jquery.com/jquery-3.5.1.min.js"

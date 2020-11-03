@@ -7,6 +7,9 @@
     font-weight: 600;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .center{
     margin: 0 auto;
 }
@@ -167,6 +170,7 @@ header{
 #services {
     position: relative;
     margin-top: -480px;
+    padding-top: 100px;
     z-index: 100;
 }
 #services > h1{
@@ -596,7 +600,7 @@ footer{
 #footer-header p{
     margin-top: 20px;
 }
-#footer-header button{
+#footer-header .footer-contact-btn{
     margin-top: 40px;
 }
 #footer-social{
