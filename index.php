@@ -52,6 +52,12 @@
                     <a href="" class="" >APPROACH</a>
                     <a data-scroll href="#services" >SERVICES</a>
                     <a data-scroll href="#contact-section">LET'S TALK</a>
+
+                    <div class="contact-social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
 
             </div>
@@ -156,7 +162,7 @@
                         will get back to you promptly.
                     </p>
                 </div>
-                <div id="contact-social">
+                <div class="contact-social">
                     <a href=""><i class="fab fa-facebook-f"></i></a>
                     <a href=""><i class="fab fa-twitter"></i></a>
                     <a href=""><i class="fab fa-linkedin-in"></i></a>

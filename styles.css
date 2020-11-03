@@ -316,12 +316,12 @@ header{
     margin-top: 30px;
     line-height: 30px;
 }
-#contact-social{
+.contact-social{
     display: flex;
     width: 120px;
     justify-content: space-between;
 }
-#contact-social i{
+.contact-social i{
     color: rgba(255, 255, 255, .4);
     font-size: 25px;
 }
@@ -757,7 +757,7 @@ footer{
     #contact-text h1{
         width: 100%;
     }
-    #contact-social{
+    .contact-social{
         margin-top: 20px;
     }
     #contact-form{
@@ -840,11 +840,18 @@ footer{
         flex-direction: column;
         justify-content: flex-start;
     }
+    #mobile-nav-links > .contact-social{
+        margin-top: 70px;
+    }
+    #mobile-nav-links .contact-social i{
+        color: rgba(0, 0, 0, .2);
+        font-size: 20px;
+    }
     #mobile-nav-header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid rgba(0,0,0,.2);
+        border-bottom: 1px solid rgba(0,0,0,.1);
         padding-bottom: 20px;
     }
     #x{
@@ -871,7 +878,7 @@ footer{
     }
     #mobile-nav-links > a{
         color: rgba(0,0,0,0.66);
-        border-bottom: 1px solid rgba(0,0,0,.2);
+        border-bottom: 1px solid rgba(0,0,0,.1);
         padding: 25px 0;
     }
     /* main banner content */
