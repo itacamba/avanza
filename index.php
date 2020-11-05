@@ -48,21 +48,21 @@
                             <a href="tel:5719829406"><i class="fas fa-phone-alt"></i>Call</a>
                         </div>
                     </div>
-                    <a href="" class="" >WORK</a>
+                    <a data-scroll href="#projects" class="" >WORK</a>
                     <a href="" class="" >APPROACH</a>
                     <a data-scroll href="#services" >SERVICES</a>
                     <a data-scroll href="#contact-section">LET'S TALK</a>
 
                     <div class="contact-social">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href="https://m.facebook.com/AvanzaDigitalUSA"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/digital_avanza"><i class="fab fa-twitter"></i></a>
                         <a href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
             </div>
             <nav id="nav">
-                <a href="" class="">WORK</a>
+                <a data-scroll href="#projects" class="">WORK</a>
                 <a href="" class="" >APPROACH</a>
                 <a data-scroll href="#services" >SERVICES</a>
                 <a data-scroll href="#contact-section">GET A QUOTE</a>
@@ -76,7 +76,7 @@
             <h1>We drive persistent growth for local businesses-</h1>
             <p>We are not satisfied with doing the bare minimum,</p>
             <p>We understand what it takes to run and grow a business.</p>
-            <button class="green-btn">Learn More</button>
+            <a href="#contact-section" class="green-btn">Learn More</a>
         </div>
         <div class="custom-shape-divider-bottom-1600263895">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -134,6 +134,7 @@
             </div>  
         </div>
     </div>
+
     <div id="activate-brand" >
         <div id="activate-left">
             <div id="blue-line"></div>
@@ -145,9 +146,26 @@
                 and brands. Leveraging our design driven approach to build cutting-edge digital
                 solutions.
             </p>
-            <a class="learn-more" href="">Learn More >></a>
+            <a class="learn-more" href="#contact-section">Learn More >></a>
         </div>
 
+    </div>
+
+    <div id="projects">
+        <h1>Featured Projects</h1>
+        <p>Here are some of our most loved projects.</p>
+        <div id="projects-container">
+            <div class="project">
+                <div class="project-img light-shadow">
+                    <img src="./images/carla-project.png" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-img light-shadow">
+                    <img src="./images/hardcover-project.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="contact-section" class="vertical-gradient">
@@ -163,8 +181,8 @@
                     </p>
                 </div>
                 <div class="contact-social">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href="https://m.facebook.com/AvanzaDigitalUSA"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/digital_avanza"><i class="fab fa-twitter"></i></a>
                     <a href=""><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
@@ -301,7 +319,7 @@
             <div id="social-links">
                 <a href="https://m.facebook.com/AvanzaDigitalUSA"><i class="fab fa-facebook-f"></i></a>
                 <a href=""><i class="fab fa-linkedin-in"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/digital_avanza"><i class="fab fa-twitter"></i></a>
                 <!-- <a href=""><i class="fab fa-instagram"></i></a> -->
             </div>
             <div class="thin-white-line"></div>
