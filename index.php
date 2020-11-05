@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <a data-scroll href="#projects" class="" >WORK</a>
-                    <a href="" class="" >APPROACH</a>
+                    <a data-scroll href="#process" class="" >APPROACH</a>
                     <a data-scroll href="#services" >SERVICES</a>
                     <a data-scroll href="#contact-section">LET'S TALK</a>
 
@@ -70,7 +70,7 @@
             </div>
             <nav id="nav">
                 <a data-scroll href="#projects" class="">WORK</a>
-                <a href="" class="" >APPROACH</a>
+                <a data-scroll href="#process" class="" >APPROACH</a>
                 <a data-scroll href="#services" >SERVICES</a>
                 <a data-scroll href="#contact-section">GET A QUOTE</a>
             </nav>
@@ -142,6 +142,9 @@
         </div>
     </div>
 
+    
+
+
     <div id="activate-brand" >
         <div id="activate-left">
             <div id="blue-line"></div>
@@ -156,6 +159,66 @@
             <a class="learn-more" href="#contact-section">Learn More >></a>
         </div>
 
+    </div>
+
+    <div id="process">
+        <h1>This is how we do it</h1>
+        <p>We listen, think, craft, and connect you to your ideal audiences.</p>
+        <div id="process-container">
+            <div class="each-process">
+                <div class="each-process-icon">
+                    <img src="./images/1-initial-consult.png" alt="">
+                </div>
+                <div class="each-process-content">
+                    <h3>Initial Consultation</h3>
+                    <p>We immerse ourselves in your world. What is your mission?
+                        who is your audience? how do we reach them? Together
+                        we define the path to achieve your goals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="each-process">
+                <div class="each-process-icon">
+                    <img src="./images/2-plan-execut.png" alt="">
+                </div>
+                <div class="each-process-content">
+                    <h3>Plan Execution</h3>
+                    <p>Once approved, we’ll deliver the online marketing solution
+                         you have chosen for your business. We’ll create inspiring
+                          paths that lead customers to you through their social 
+                          channels.
+                    </p>
+                </div>
+            </div>
+
+            <div class="each-process">
+                <div class="each-process-icon">
+                    <img src="./images/3-strategy-prop.png" alt="">
+                </div>
+                <div class="each-process-content">
+                    <h3>Strategy Proposal</h3>
+                    <p>From the information we’ve gathered, we will create and
+                         present a marketing plan to fit your business needs. 
+                         The result is engaging, effective content that drives 
+                         brand interactions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="each-process">
+                <div class="each-process-icon">
+                    <img src="./images/4-test-measure.png" alt="">
+                </div>
+                <div class="each-process-content">
+                    <h3>Test & Measuring</h3>
+                    <p>While our agency works on your campaigns, we’ll measure
+                         the vital metrics that matter such as traffic and conversions.
+                          Numbers don’t lie.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="projects">
@@ -174,6 +237,7 @@
             </div>
         </div>
     </div>
+
 
     <div id="contact-section" class="vertical-gradient">
 

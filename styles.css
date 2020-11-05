@@ -243,7 +243,7 @@ header{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    margin-top: 150px;
+    padding: 100px 0;
 } 
 #activate-left{
     width: 35%;
@@ -258,7 +258,7 @@ header{
     margin-top: 32px;
     text-align: right;
     /* color: #2ca1ad; */
-    color: #777777;
+    color: #001360;
 }
 #activate-right{
     width: 55%;
@@ -276,22 +276,73 @@ header{
     font-size: 20px;
 }
 /* END ACTIVATE YOUR BRAND */
+/* OUR PROCESS HOW WE DO IT */
+#process{
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+    padding-bottom: 80px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+#process h1{
+    color: #001360;
+}
+#process p {
+    margin-top: 10px;
+    color: #aaa;
+}
+#process-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.each-process{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.each-process-icon{
+    width: 15%;
+}
+.each-process-icon img{
+    width: 100%;
+}
+.each-process-content{
+    width: 87%;
+    text-align: left;
+    padding-left: 15px;
+}
+.each-process-content h3{
+    color: #001360;
+}
+.each-process-content p{
+    margin-top: 20px;
+    color: #aaa;
+    line-height: 25px;
+    font-weight: 400;
+}
+/* END OUR PROCESS HOW WE DO IT */
+
 /* PROJECTS SECTION */
 #projects{
     width: 100%;
     margin: 0 auto;
-    margin-top: 150px;
-    background-color: #f1f1f1;
     padding: 100px 0;
 }
 #projects h1{
     text-align: center;
+    /* color: #001360; */
     color: #777777;
     margin-top: -20px;
 }
 #projects p{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
     color: #aaa;
 }
 #projects-container{
@@ -564,7 +615,7 @@ header{
 #testimonials > h1{
     text-align: center;
     margin: 0 auto;
-    color: #777777;
+    color: #001360;
 }
 #testimonials > p{
     width: 70%;
@@ -743,7 +794,7 @@ footer{
 #success-text h1{
     text-align: center;
     width: 90%;
-    color: #21437c;
+    color: #001360;
 }
 #success-text p{
    width: 85%;
@@ -975,6 +1026,20 @@ footer{
     .service{
         width: 40%;
     }
+    /* process */
+    #process > p{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .each-process{
+        width: 100%;
+    }
+    .each-process-icon{
+        width: 12%;
+    }
+    .each-process-content{
+        width: 85%;
+    }
     /* projects */
     #projects-container{
         flex-direction: column;
@@ -1038,6 +1103,28 @@ footer{
     }
     #projects-container{
         width: 85%;
+    }
+     /* process */
+     #process > h1{
+         width: 85%;
+         margin: 0 auto;
+         text-align: left;
+     }
+     #process > p{
+         width: 85%;
+         text-align: left;
+     }
+     #process-container{
+         width: 85%;
+     }
+    .each-process-icon{
+        width: 15%;
+    }
+    .each-process-content{
+        width: 82%;
+    }
+    .each-process-content p {
+        text-align: justify;
     }
     .testimonial{
         width: 95%;
