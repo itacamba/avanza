@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Cabin', sans-serif;
     letter-spacing: .4px;
     font-weight: 600;
     text-decoration: none;
@@ -19,7 +19,10 @@ html{
     margin-top: 25px;
 }
 p{
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-family: Freight-sans-pro, sans-serif;
 }
 .container-90{
     width: 90%;
@@ -50,6 +53,7 @@ p{
     text-align: center;
     line-height: 40px;
     font-weight: 600;
+    font-family: 'Cabin';
     font-size: 13px;
 }
 #main-banner{
@@ -151,7 +155,7 @@ header{
     position: relative;
 }
 #banner-content > p{
-    margin-top: 15px;
+    margin-top: 10px;
     color: #f2f2f2;
     opacity: 0; /* this allows animation to work */
 }
@@ -231,6 +235,7 @@ header{
 }
 .service-content p{
     margin-top: 10px;
+    color: #aaaaaa;
 }
 /* ACTIVATE YOUR BRAND */
 #activate-brand{
@@ -261,6 +266,7 @@ header{
 }
 #activate-right p{
     font-size: 20px;
+    color: #aaaaaa;
 }
 .learn-more{
     display: block;
@@ -286,6 +292,7 @@ header{
 #projects p{
     text-align: center;
     margin-top: 15px;
+    color: #aaa;
 }
 #projects-container{
     width: 80%;
@@ -401,7 +408,7 @@ header{
 
 #contact-form input[type="text"], input[type="email"], input[type="tel"]{
     border:none;
-    border-bottom: 1px solid rgba(0,0,0,0.26);
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
     margin-bottom: 30px;
     outline: none;
     padding-bottom: 10px;
@@ -416,7 +423,7 @@ header{
     resize: none;
     padding-bottom: 10px;
     font-size: 15px;
-    border-bottom: 1px solid rgba(0,0,0,0.26);
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
 
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -424,7 +431,7 @@ header{
 
 }
 ::placeholder {
-    color: rgba(0,0,0,.3);
+    color: rgba(100, 100, 100, 0.3);
     opacity: 1; /* Firefox */
   }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -447,7 +454,6 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid red; */
     margin-right: 25px;
     margin-bottom: 20px;
 }
@@ -460,6 +466,9 @@ header{
 }
 .service-checkboxes label{
     padding-left: 5px;
+    font-size: 14px;
+    font-family: Freight-sans-pro, sans-serif;
+    color: #aaaaaa;
     font-weight: 300;
     cursor: pointer;
 }
@@ -587,33 +596,42 @@ header{
     align-items: left;
 }
 .info-img{
-    width: 100px;
+    width: 50px;
 }
 .info-img img{
     width: 100%;
 }
 .info-content{
     width: 180px;
-    margin-left: 20px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center
 }
 .info-content > h2{
     font-size: 16px;
-    color: #2ca1ad;
+    color: black;
 }
 .info-content > p{
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 14px;
     width: 100%;
-    color: #000000;
+    font-family: Freight-sans-pro, sans-serif;
+    color:#aaaaaa;
 }
 .testimonial-content{
     margin-top: 25px;
     line-height: 30px;
-    font-weight: 200;
-    color: #777777;
+    font-weight: 300;
+    font-family: Freight-sans-pro, sans-serif;
+    color: #aaaaaa;
+}
+.testimonial-stars{
+    padding-top: 5px;
+    width: 70px;
+}
+.testimonial-stars img{
+    width: 100%;
 }
 /* END TESTIMONIALS */
 /* FOOTER */

@@ -9,8 +9,9 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700&display=swap" rel="stylesheet"> 
-
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Freight Sans Pro -->
+    <link rel="stylesheet" href="https://use.typekit.net/bwj1mbu.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./animations.css">
     <title>Avanza | Digital Services</title>
@@ -264,6 +265,9 @@
                         <h2>Carla Sahagun</h2>
                         <p>Software Engineer</p>
                     </div>
+                    <div class="testimonial-stars">
+                        <img src="./images/stars.png" alt="">
+                    </div>
                 </div>
                 <div class="testimonial-content">
                     Avanza has been extremely helpful working with my 
@@ -277,10 +281,13 @@
                         <img src="./images/carla-round-portrait.png" alt="">
                     </div>
                     <div class="info-content">
-                            <h2>Gigi Mercer</h2>
-                            <p>Silver Hour</p>
-                        </div>
+                        <h2>Gigi Mercer</h2>
+                        <p>Founder of Silver Hour </p>
                     </div>
+                    <div class="testimonial-stars">
+                        <img src="./images/stars.png" alt="">
+                    </div>
+                </div>
                     <div class="testimonial-content">
                         Avanza has been extremely helpful working with my 
                         small team of developers. The article is intended
@@ -290,17 +297,22 @@
                 <div class="testimonial">
                     <div class="customer-info">
                         <div class="info-img">
-                            <img src="./images/carla-round-portrait.png" alt="">
+                            <img src="./images/hardcover-profile.png" alt="">
                         </div>
                         <div class="info-content">
-                            <h2>Carla Sahagun</h2>
-                            <p>Software Engineer</p>
+                            <h2>Samantha Hauvine</h2>
+                            <p>Writer & Author</p>
+                        </div>
+                        <div class="testimonial-stars">
+                            <img src="./images/stars.png" alt="">
                         </div>
                     </div>
                     <div class="testimonial-content">
-                        Avanza has been extremely helpful working with my 
-                        small team of developers. The article is intended
-                        for novice illustrators and Adobe Photoshop.
+                        Working with the Avanza team has been a 
+                        most pleasant experience! Their dedication
+                        and passion for what they do is exemplified 
+                        by their customer support and attentiveness
+                        to the specific needs of our business.
                     </div>
                 </div>
             </div>
