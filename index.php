@@ -54,9 +54,9 @@
                     <a data-scroll href="#contact-section">LET'S TALK</a>
 
                     <div class="contact-social">
-                        <a href="https://m.facebook.com/AvanzaDigitalUSA"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/digital_avanza"><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://m.facebook.com/AvanzaDigitalUSA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/digital_avanza" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/avanza-digital" target="_blank"><i class="fab fa-linkedin-in" target="_blank"></i></a>
                     </div>
                 </div>
 
@@ -181,9 +181,9 @@
                     </p>
                 </div>
                 <div class="contact-social">
-                    <a href="https://m.facebook.com/AvanzaDigitalUSA"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/digital_avanza"><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://m.facebook.com/AvanzaDigitalUSA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/digital_avanza" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/avanza-digital"><i class="fab fa-linkedin-in" target="_blank"></i></a>
                 </div>
             </div>
 
@@ -317,9 +317,9 @@
         <div id="footer-social">
             <div class="thin-white-line"></div>
             <div id="social-links">
-                <a href="https://m.facebook.com/AvanzaDigitalUSA"><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/digital_avanza"><i class="fab fa-twitter"></i></a>
+                <a href="https://m.facebook.com/AvanzaDigitalUSA" target="blank_"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/avanza-digital" target="_blank"><i class="fab fa-linkedin-in" target="blank_"></i></a>
+                <a href="https://twitter.com/digital_avanza" target="blank_"><i class="fab fa-twitter"></i></a>
                 <!-- <a href=""><i class="fab fa-instagram"></i></a> -->
             </div>
             <div class="thin-white-line"></div>
