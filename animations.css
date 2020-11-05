@@ -60,6 +60,6 @@
     animation-duration: 1s;
 }
 #menu-icon{
-    animation: slideInLeft;
+    animation: slideInRight;
     animation-duration: 1s;
 }

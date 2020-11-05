@@ -79,9 +79,7 @@ header{
 #call-to-action{
     display: none;
 }
-.logo-mobile{
-    display: none;
-}
+
 .logo{
     width: 160px;
     opacity: 0;/* this allows animation to work */
@@ -94,6 +92,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
     width: 30px;
     height: 20px;
     cursor: pointer;
@@ -282,7 +281,7 @@ header{
     margin: 0 auto;
     padding: 100px 0;
     padding-bottom: 80px;
-    background-color: #f1f1f1;
+    background-color: #eeeeee;
     text-align: center;
 }
 #process h1{
@@ -889,9 +888,7 @@ footer{
     }
 }
 @media screen and (max-width: 840px){
-    header{
-        flex-direction: row-reverse;
-    }
+
     #call-to-action{
         display: block;
         width: 35px;
@@ -905,16 +902,6 @@ footer{
         line-height: 35px;
         text-align: center;
         color: #ffffff;
-    }
-    .logo{
-        display: none;
-    }
-    .logo-mobile{
-        display: block;
-        width: 139px;
-    }
-    .logo-mobile img{
-        width: 100%;
     }
     #menu-icon{
         display: flex;
@@ -931,14 +918,14 @@ footer{
         display: flex;
         flex-direction: column;
         top: 0;
-        left: 0;
+        right: 0;
         background: rgba(242, 242, 242, 1);
         z-index: 10000;
         padding-bottom: 20px;
         transition:1s;
         -webkit-transition:1s;
         -moz-transition:1s;
-        transform: translateX(-120%);
+        transform: translateX(120%);
 
     }
     #mobile-nav.slide-right{
@@ -1007,9 +994,7 @@ footer{
         margin-top: 0;
         line-height: 30px;
     }
-    /* #banner-content > a {
-        margin-top: 30px;
-    } */
+
     #big-a {
         width: 300px;
     }
@@ -1025,6 +1010,10 @@ footer{
     }
     .service{
         width: 40%;
+        padding: 30px;
+    }
+    .service-img{
+        width: 60%;
     }
     /* process */
     #process > p{
@@ -1084,9 +1073,6 @@ footer{
     #mobile-nav{
         width: 70%;
     }
-    .logo-mobile{
-        width: 80px;
-    }
     #services{
         margin-top: -550px;
         padding-top: 100px; /* Necessary for the smooth scroll*/
@@ -1124,7 +1110,7 @@ footer{
         width: 82%;
     }
     .each-process-content p {
-        text-align: justify;
+        text-align: left;
     }
     .testimonial{
         width: 95%;
