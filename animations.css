@@ -63,3 +63,33 @@
     animation: slideInRight;
     animation-duration: 1s;
 }
+/* Services - Solutions */
+#services h1{
+    animation: fadeInDown;
+    animation-duration: 1s;
+}
+.service:first-child{
+    animation: fadeInDown;
+    animation-duration: 1s;
+}
+.service:nth-child(2){
+    animation: fadeInDown;
+    animation-duration: 1s;
+    animation-delay: .1s;
+}
+.service:nth-child(3){
+    animation: fadeInDown;
+    animation-duration: 1s;
+    animation-delay: .2s;
+}
+.service:nth-child(4){
+    animation: fadeInDown;
+    animation-duration: 1s;
+    animation-delay: .3s;
+}
+
+/* Activate your brands potential */
+#activate-left h1{
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
