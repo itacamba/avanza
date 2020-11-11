@@ -546,6 +546,13 @@ header{
     font-size: 12px;
     background: transparent;
 }
+.error-php{
+    display: block;
+    color:red;
+    font-size: 12px;
+    background: transparent;
+}
+
 
 #form-node.invalid {
     outline-color: red;

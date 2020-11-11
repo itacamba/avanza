@@ -18,7 +18,7 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED
 
 }
 // check if form was submitted
-if(!empty($_POST)){
+if(isset($_POST['submit'])){
     // validates name
     if(empty($_POST['name'])){
         $error = '*Name is required';
@@ -39,12 +39,12 @@ if(!empty($_POST)){
         }
     }
 
-    // valudates phone
+    // validates phone
     if(empty($_POST['phone'])){
         $error = "*Phone is required";
     } else {
         $phone = test_input($_POST['phone']);
-        if(!preg_match("/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/", $phone)){
+        if(!preg_match("/^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/", $phone)){
             $error = "*Phone is not valid, try 000-000-0000";
         }
     }

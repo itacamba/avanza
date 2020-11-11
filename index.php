@@ -256,9 +256,10 @@
             </div>
 
             <div id="contact-form" class="light-shadow">
-                <form action="form_process.php" method="POST" id="form-node" >
+                <!-- form action is left empty so it redirects php to same page -->
+                <form action="" method="POST" id="form-node" >
                     <h3>We'd love to know more about you!</h3>   
-                    <p><?= $error ?></p> 
+                    <p class="error-php"><?= $error ?></p> 
                     <p class="error"></p>
                     <div id="name-email">
                         <input type="text" value="<?= $name ?>" placeholder="*Your Name" name="name" id="name" require />
