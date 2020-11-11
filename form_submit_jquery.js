@@ -11,11 +11,11 @@ $(document).ready(function (){
         const successBox = $('#form-success')
         const failedBox = $('#form-failed')
        
-        const url = $('website_url')
-        const seo = $('seo')
-        const design = $('web_design')
-        const advertising = $('advertising')
-        const social_media = $('social_media')
+        const url = $('#website_url')
+        const seo = $('#seo')
+        const design = $('#web_design')
+        const advertising = $('#advertising')
+        const social_media = $('#social_media')
         let errorArr = []
 
         if(!email.val()|| !name.val() || !phone.val() || !companyName.val() || !message.val()){
@@ -97,18 +97,18 @@ $(document).ready(function (){
                         successBox.hide();
                     }, 5000)
 
-                    //reset form
+                    // reset form
                     name.val("")
                     email.val("") 
                     phone.val("")
                     companyName.val("")
                     message.val("") 
                     url.val("")
-
-                    seo.checked = false
-                    advertising.checked = false
-                    design.checked = false
-                    social_media.checked = false
+                    // reset checkboxes
+                    seo.prop('checked', false);
+                    advertising.prop('checked', false);
+                    design.prop('checked', false);
+                    social_media.prop('checked', false);
             },
             error: function() {
                 alert('There was some error performing the AJAX call!');
