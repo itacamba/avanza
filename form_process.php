@@ -85,13 +85,13 @@ if(!empty($_POST)){
             $name = $email = $phone = $company = $message = $url = $seo = $advertising = $design = $social_media = "";
             $form_message = 'success';
             return 'success';
-        } else {
+        } else { // NOT HANDLED CORRECTLY YET, NOT DOING ANYTHING WITH RETURN VALUE YET
             $form_message = 'server error';
             return 'failed';
         }
 
     // is not coming here
-    } else { // if error is not empty
+    } else { // if error is not empty // NOT HANDLED CORRECTLY YET, NOT DOING ANYTHING WITH RETURN VALUE YET
         $form_message = "failed";
         return "failed";
     }
