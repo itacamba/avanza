@@ -44,8 +44,8 @@ if(isset($_POST['submit'])){
         $error = "*Phone is required";
     } else {
         $phone = test_input($_POST['phone']);
-        if(!preg_match("/^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/", $phone)){
-            $error = "*Phone is not valid, try 000-000-0000";
+        if(!preg_match("/^\(?(\d{3})\)?[-\. ]?(\d{3})[-\. ]?(\d{4})$/", $phone)){
+            $error = "*US Phone is not valid, try 000 000 0000";
         }
     }
 

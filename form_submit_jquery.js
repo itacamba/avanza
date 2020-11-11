@@ -47,11 +47,11 @@ $(document).ready(function (){
             }
 
             // if phone is not valid
-            if(!/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/.test(phone.val())){
+            if(!/^\(?(\d{3})\)?[-\. ]?(\d{3})[-\. ]?(\d{4})$/.test(phone.val())){
                 // make the form shake if incorrect
                 e.target.classList.add("invalid");
                 phone.css("border-bottom-color", "red")
-                pError.text("*Phone is not valid, try 000-000-0000")
+                pError.text("*US phone is not valid, try 000 000 0000")
                 // populate error arr
                 errorArr.push("phone")
                 // remove shake animation after 1000 miliseconds
