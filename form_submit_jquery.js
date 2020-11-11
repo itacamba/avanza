@@ -18,7 +18,6 @@ $(document).ready(function (){
         const social_media = $('social_media')
         let errorArr = []
 
-        //debugger
         if(!email.val()|| !name.val() || !phone.val() || !companyName.val() || !message.val()){
             pError.text("Please fill all required fields") 
             // make the form shake if incorrect
@@ -84,39 +83,42 @@ $(document).ready(function (){
         // Communicates with the PHP File
         if(errorArr.length < 1){
         pError.text("")
-        const form = $("#form-node")
+        // const form = $("#form-node")
         $.ajax({
             url: "form_process.php",
-            method: 'post',
-            data: form.serialize(),
+            type: 'POST',
+            data:  $("form").serialize(),
             success: function(result){
-                if (result == 'success'){
+                    console.log("success => ", result)
                     // display Success Box
-                    successBox.style.display = 'block'
+                    successBox.show();
                     setTimeout(() => {
-                        successBox.style.display = 'none'
+                    // hide Success Box
+                        successBox.hide();
                     }, 5000)
 
-                    // reset form
-                    name.val() = ""
-                    email.val() = ""
-                    phone.val() = ""
-                    companyName.val() = ""
-                    message.val() = ""
-                    url.val() = ""
+                    //reset form
+                    name.val("")
+                    email.val("") 
+                    phone.val("")
+                    companyName.val("")
+                    message.val("") 
+                    url.val("")
 
                     seo.checked = false
                     advertising.checked = false
                     design.checked = false
                     social_media.checked = false
-
-                } else {
-                    failedBox.css("display", "block")
-                    setTimeout(() => {
-                        failedBox.css("display", "none")
-                    }, 3000)
-                }
+            },
+            error: function() {
+                alert('There was some error performing the AJAX call!');
+                failedBox.show();
+                setTimeout(() => {
+                    // hide Success Box
+                        failedBox.hide();
+                }, 5000)
             }
+            
         });
         }
     });

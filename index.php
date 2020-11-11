@@ -1,4 +1,4 @@
-<?php include('./php/form_process.php'); ?>
+<?php include('form_process.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -256,7 +256,7 @@
             </div>
 
             <div id="contact-form" class="light-shadow">
-                <form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" id="form-node" >
+                <form action="form_process.php" method="POST" id="form-node" >
                     <h3>We'd love to know more about you!</h3>   
                     <p><?= $error ?></p> 
                     <p class="error"></p>
@@ -423,7 +423,8 @@
         </div>
     </div>
     <div id="form-failed">
-        Problem Sending Form
+        AJAX Error when sending form
+        <p>If you see this message please give us a call at 571-982-9406</p>
     </div>
 
 
@@ -443,6 +444,6 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous">
     </script>
-    <script src="./js/form_submit_jquery.js"></script>
+    <script src="./form_submit_jquery.js"></script>
 </body>
 </html>

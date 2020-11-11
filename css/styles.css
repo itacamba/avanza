@@ -817,6 +817,7 @@ footer{
 }
 #form-failed{
     background-color: #f09797;
+    color: rgb(133, 16, 16);
     width: 40%;
     margin: 0 auto;
     position: fixed;
@@ -824,10 +825,16 @@ footer{
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 10px;
-    border: 1px solid rgba(0,0,0,.3);
     height: 40vh;
     z-index: 10000;
+    text-align: center;
+    padding-top: 60px;
     display: none;
+}
+#form-failed p{
+    color: rgba(0, 0, 0, 0.48);
+    padding: 15px;
+    margin-top: 20px;
 }
 /* END WHEN FORM SUBMITS */
 
