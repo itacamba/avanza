@@ -49,24 +49,25 @@
                             <a href="tel:5719829406"><i class="fas fa-phone-alt"></i>Call</a>
                         </div>
                     </div>
-                    <a data-scroll href="#projects" class="" >WORK</a>
-                    <a data-scroll href="#process" class="" >APPROACH</a>
                     <a data-scroll href="#services" >SERVICES</a>
-                    <a data-scroll href="#contact-section">LET'S TALK</a>
+                    <a data-scroll href="#process" class="" >APPROACH</a>
+                    <a data-scroll href="#projects" class="" >WORK</a>
+                    <a data-scroll href="#contact-section">LET'S CONNECT</a>
 
                     <div class="contact-social">
                         <a href="https://m.facebook.com/AvanzaDigitalUSA" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://twitter.com/digital_avanza" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/company/avanza-digital" target="_blank"><i class="fab fa-linkedin-in" target="_blank"></i></a>
+                        <a href="https://www.linkedin.com/company/avanza-digital" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://g.co/kgs/L2wSGn" target="_blank"><i class="fab fa-google-plus-g"></i></a>
                     </div>
                 </div>
 
             </div>
             <nav id="nav">
-                <a data-scroll href="#projects" class="">WORK</a>
-                <a data-scroll href="#process" class="" >APPROACH</a>
                 <a data-scroll href="#services" >SERVICES</a>
-                <a data-scroll href="#contact-section">GET A QUOTE</a>
+                <a data-scroll href="#process" class="" >APPROACH</a>
+                <a data-scroll href="#projects" class="">WORK</a>
+                <a data-scroll href="#contact-section">LET'S CONNECT</a>
             </nav>
         </header>
 
@@ -249,6 +250,7 @@
                     <a href="https://m.facebook.com/AvanzaDigitalUSA" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://twitter.com/digital_avanza" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.linkedin.com/company/avanza-digital"><i class="fab fa-linkedin-in" target="_blank"></i></a>
+                    <a href="https://g.co/kgs/L2wSGn" target="_blank"><i class="fab fa-google-plus-g"></i></a>
                 </div>
             </div>
 
@@ -328,15 +330,17 @@
                     </div>
                 </div>
                 <div class="testimonial-content">
-                    Avanza has been extremely helpful working with my 
-                    small team of developers. The article is intended
-                    for novice illustrators and Adobe Photoshop.
+                        These guys have done a great job helping me with my 
+                        portfolio design. They have been very responsive 
+                        and listened to all information I had to give and 
+                        delivered great results in a timely manner. 
+                        Thank you!
                 </div>
             </div>
             <div class="testimonial">
                 <div class="customer-info">
                     <div class="info-img">
-                        <img src="./images/carla-round-portrait.png" alt="">
+                        <img src="./images/gigi-mercer.png" alt="">
                     </div>
                     <div class="info-content">
                         <h2>Gigi Mercer</h2>
@@ -347,9 +351,11 @@
                     </div>
                 </div>
                     <div class="testimonial-content">
-                        Avanza has been extremely helpful working with my 
-                        small team of developers. The article is intended
-                        for novice illustrators and Adobe Photoshop.
+                        Avanza made our website beautiful, informative and user 
+                        friendly. The SEO service they offer helped our online 
+                        presence tremendously. Not only are they great at their 
+                        job, but they are creative and pleasant to work with. 
+                        I’d definitely work with them again!
                     </div>
                 </div>
                 <div class="testimonial">
@@ -394,8 +400,9 @@
             <div class="thin-white-line"></div>
             <div id="social-links">
                 <a href="https://m.facebook.com/AvanzaDigitalUSA" target="blank_"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/company/avanza-digital" target="_blank"><i class="fab fa-linkedin-in" target="blank_"></i></a>
+                <a href="https://www.linkedin.com/company/avanza-digital" target="_blank"><i class="fab fa-linkedin-in" ></i></a>
                 <a href="https://twitter.com/digital_avanza" target="blank_"><i class="fab fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fab fa-google-plus-g"></i></a>
                 <!-- <a href=""><i class="fab fa-instagram"></i></a> -->
             </div>
             <div class="thin-white-line"></div>

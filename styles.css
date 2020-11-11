@@ -420,7 +420,7 @@ header{
 }
 .contact-social{
     display: flex;
-    width: 120px;
+    width: 150px;
     justify-content: space-between;
 }
 .contact-social i{
@@ -744,7 +744,7 @@ footer{
     cursor: pointer;
 }
 #social-links{
-    width: 100px;
+    width: 150px;
     display: flex;
     justify-content: space-between;
 }
@@ -868,6 +868,9 @@ footer{
         margin: 0 auto;
         margin-top: 80px;
     }
+    #contact-lets-work .contact-social{
+        display: none;
+    }
     .contact-social{
         margin-top: 20px;
     }
@@ -940,11 +943,14 @@ footer{
         justify-content: flex-start;
     }
     #mobile-nav-links > .contact-social{
-        margin-top: 70px;
+        margin: 0 auto;
+        margin-top: 50px;
+
     }
     #mobile-nav-links .contact-social i{
         color: rgba(0, 0, 0, .2);
-        font-size: 20px;
+        font-size: 15px;
+        padding: 10px;
     }
     #mobile-nav-header{
         display: flex;
@@ -1043,6 +1049,9 @@ footer{
     #testimonials{
         margin-top: 250px;
     }
+    .thin-white-line{
+        width: 30%;
+    }
 }
 @media screen and (max-width: 670px){
     #activate-brand{
@@ -1066,6 +1075,10 @@ footer{
     }
     .testimonial{
         width: 400px;
+    }
+
+    .thin-white-line{
+        width: 25%;
     }
     
 }
@@ -1095,6 +1108,7 @@ footer{
          width: 85%;
          margin: 0 auto;
          text-align: left;
+         font-size: 25px;
      }
      #process > p{
          width: 85%;
@@ -1139,11 +1153,12 @@ footer{
     #name-email input:first-child{
         margin-right: 0;
     }
-    .thin-white-line{
-        width: 25%;
-    }
     #footer-header h1{
         font-size: 25px;
+    }
+
+    .thin-white-line{
+        width: 15%;
     }
 }
 @media screen and (max-width: 320px){
