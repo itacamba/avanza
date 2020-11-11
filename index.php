@@ -12,9 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Freight Sans Pro -->
     <link rel="stylesheet" href="https://use.typekit.net/bwj1mbu.css">
+    <link rel="icon" type="image/png"  href="./images/favicon.png">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./animations.css">
-    <title>Avanza | Digital Services</title>
+    <title>Avanza | Full Service Digital Marketing in Virginia</title>
 </head>
 <body>
     <?php
