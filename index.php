@@ -1,4 +1,4 @@
-<?php include('form_process.php'); ?>
+<?php include('./php/form_process.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +13,8 @@
     <!-- Freight Sans Pro -->
     <link rel="stylesheet" href="https://use.typekit.net/bwj1mbu.css">
     <link rel="icon" type="image/png"  href="./images/favicon.png">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./animations.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/animations.css">
     <title>Avanza | Full Service Digital Marketing in Virginia</title>
 </head>
 <body>
@@ -429,9 +429,9 @@
 
 
 
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
     <!-- added smooth scrolling from library  https://github.com/cferdinandi/smooth-scroll -->
-    <script src="cferdi_smoothscroll.js"></script>
+    <script src="./js/cferdi_smoothscroll.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 100
@@ -443,6 +443,6 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous">
     </script>
-    <script src="form_submit_jquery.js"></script>
+    <script src="./js/form_submit_jquery.js"></script>
 </body>
 </html>
