@@ -272,7 +272,7 @@
                     
                     <input type="text" value="<?= $company ?>" placeholder="*Company Name" name="company" id="company"/>
                     
-                    <input type="text" placeholder="Your Website URL (optional)" name="website_url" id="website_url"/>
+                    <input type="text" value="<?= $url?>"placeholder="Your Website URL (optional)" name="website_url" id="website_url"/>
                     <textarea type="text" value="<?= $message ?>" name="message" id="message" rows="1" placeholder="*Your Message" require></textarea>
                     
 
