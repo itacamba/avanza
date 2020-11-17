@@ -78,7 +78,7 @@
             </div>
             <h1>We drive persistent growth for local businesses-</h1>
             <p>We are not satisfied with doing the bare minimum,</p>
-            <p>We understand what it takes to run and grow a business.</p>
+            <p>We understand what it takes to run and grow a business in Herndon, Virginia.</p>
             <a href="#contact-section" class="green-btn">Learn More</a>
         </div>
         <div class="custom-shape-divider-bottom-1600263895">
